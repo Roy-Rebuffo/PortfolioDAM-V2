@@ -1,8 +1,8 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    font-family: sans-serif;
     color: snow;
     background-color: rgb(19, 19, 19);
 }
@@ -13,6 +13,14 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: rgb(45 45 45);
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+main{
+    font-family: sans-serif;
+    display: flex;
 }
 .name-info{
     width: 20%;
@@ -20,12 +28,9 @@ header{
     justify-content: center;
     background-color: transparent;
 }
-.name-info h1{
-    margin-left: 80px;
-    font-family: "Permanent Marker", cursive;
-    font-weight: 400;
-    font-size: 50px;
-    background-color: transparent;
+.name-info img{
+    width: 70%;
+    margin-left: 150px;
 }
 .ul-info{
     width: 50%;
@@ -49,11 +54,13 @@ header{
     text-decoration: none;
     background-color: transparent;
 }
-main{
-    display: flex;
-}
 .hero-container{
     height: 100vh;
+}
+.hero-container img{
+    height:90%;
+    margin-top: 15px;
+    border-radius: 20px;
 }
 .hero{
     height: 100%; 
@@ -99,4 +106,76 @@ main{
 .explore-btn:hover {
     background-color: #8d8b8b;
     transition: background-color 0.3s ease;
+}
+
+/* CONTACT STYLES */
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title h2{
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    background-color: azure;
+    border-radius: 50px;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-inputs:focus{
+    border: 3px solid #197b56;
+}
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+}
+.contact-left button{
+    width: 40%;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#197b56, #195e7b);
+    cursor: pointer;
+}
+.contact-right img{
+    height: 800px;
+}
+@media (max-width:800px){
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
 }
