@@ -5,6 +5,7 @@
     list-style-type: none;
     color: snow;
     background-color: rgb(19, 19, 19);
+    cursor:url(/assets/hand-pointer.svg)12 12, auto;
 }
 header{
     width: 100%;
@@ -28,9 +29,13 @@ main{
     justify-content: center;
     background-color: transparent;
 }
+.name-info a{
+    background: none;
+}
 .name-info img{
-    width: 70%;
-    margin-left: 150px;
+    width: 90%;
+    margin-left: 100px;
+    margin-top: 5px;
 }
 .ul-info{
     width: 50%;
@@ -61,6 +66,8 @@ main{
     height:90%;
     margin-top: 15px;
     border-radius: 20px;
+    cursor: pointer;
+    cursor: url(/assets/heart-outline.svg)12 12, auto;
 }
 .hero{
     height: 100%; 
